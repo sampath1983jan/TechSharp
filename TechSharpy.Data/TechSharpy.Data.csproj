@@ -70,6 +70,12 @@
     <Compile Include="Query.cs" />
     <Compile Include="TQuery.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\TS\TS Work location\TS\TechSharpy.Services\TechSharpy.Services.csproj">
+      <Project>{686710ce-5a21-409d-8879-7ffe6f98f8fa}</Project>
+      <Name>TechSharpy.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

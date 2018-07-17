@@ -545,7 +545,7 @@ using MySql.Data.MySqlClient;
             }
             else if (opt == Operator._NotEqual)
             {
-                return " != " + fval                     ;
+                return " != " + fval;
             }
             else if (opt == Operator._NotIn)
             {

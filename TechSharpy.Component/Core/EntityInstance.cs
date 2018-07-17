@@ -8,7 +8,7 @@ namespace TechSharpy.Entitifier
     {
         public string Name;
         public Int32 InstanceID;
-        public FieldType FieldType;
+        public EntityFieldType FieldType;
         public bool IsKey;
         public bool IsRequired;
         public bool IsUnique;
@@ -29,7 +29,7 @@ namespace TechSharpy.Entitifier
         public Int64 Incrementby;
         public bool IsShow;
 
-        public EntityInstance(string name, int instanceID, FieldType fieldType, bool isKey, bool isRequired, bool isUnique, int lookUpID, bool isCore, int entityKey, string value, bool isReadOnly, string defaultValue, int displayOrder, List<string> lookUpArray, string min, string max, int maxLength, string note, bool autoIncrement, long incrementfrom, long incrementby)
+        public EntityInstance(string name, int instanceID, EntityFieldType fieldType, bool isKey, bool isRequired, bool isUnique, int lookUpID, bool isCore, int entityKey, string value, bool isReadOnly, string defaultValue, int displayOrder, List<string> lookUpArray, string min, string max, int maxLength, string note, bool autoIncrement, long incrementfrom, long incrementby)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
             InstanceID = instanceID;
@@ -60,7 +60,7 @@ namespace TechSharpy.Entitifier
             InstanceID = pinstanceID;
             Name = "";
             InstanceID = -1;
-            FieldType = FieldType._Text;
+            FieldType = EntityFieldType._Text;
             IsKey = false;
             IsRequired = false;
             IsUnique = false;
